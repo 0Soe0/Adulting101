@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <title>Adulting101</title>
+</head>
+<body>
+  <header id="navbar">
+    <nav>
+      <div>
+        <div class="col-12">
+          <ul class="d-none d-md-flex" id="menuList">
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="index.html#categoriesSectionId" id="categories">Categories</a></li>
+            <li><a href="questions.html" id="questions">Questions</a></li>
+            <li><a href="popular.html" id="popular">Popular</a></li>
+            <li><a href="signIn.html" id="signIn">Sign in</a></li>
+          </ul>
+          <div class="menuButtonContainer">
+            <button class="d-flex d-md-none menuButton" onclick="toggleMenu()" id="menuButtonId">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-justify" id="openMenu" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-square d-none" id="closeMenu" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="heroSection">
+      <h1>Adulting101</h1>
+      <p>Because your landlord shouldn't be your first call.</p>
+      <div class="heroButtons">
+        <a class="primaryButton primaryButtonLink" href="signIn.html">Ask for help</a>
+        <a class="secondaryButton secondaryButtonLink" href="signIn.html">Help others</a>
+      </div>
+    </section>
+
+    <section class="numbersSection">
+      <div class="row m-0">
+        <div class="numbersItem col-12 col-md-6 col-xl-3 p-0">
+          <h2>100.000+</h2>
+          <p>Questions asked</p>
+        </div>
+        <div class="numbersItem col-12 col-md-6 col-xl-3 p-0">
+          <h2>100%</h2>
+          <p>Solutions</p>
+        </div>
+        <div class="numbersItem col-12 col-md-6 col-xl-3 p-0">
+          <h2>200.000+</h2>
+          <p>Points of view</p>
+        </div>
+        <div class="numbersItem col-12 col-md-6 col-xl-3 p-0">
+          <h2>20.000+</h2>
+          <p>Video classes</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="infoContainer">
+      <div class="info" id="infoId">
+        <div class="generalInfoSection visibleGeneralInfoSection">
+          <div class="generalInfoContainer">
+            <div class="row smallerScreensInfo">
+              <div class="col-12 col-xl-6">
+                <div class="paragraphInfo">
+                  <h2><span>What</span> it's all about</h2>
+                  <h3>& why</h3>
+                  <span class="generalInfoSpan">We all have been there, done that.</span>
+                  <p>Tool in hand, low faith and lots of things to learn how to fix all at once, because when one thing breaks, another always follows. Just out of your childhood home and getting used to living alone, Adulting101 is a website created by those who already went through this, and those who just started. If you need a hand, or wanna offer one, this is the place to do so. Navigate through posts, step by step tutorials, videos, pictures, and everything needed  to fix that goddamned sink.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 infoImgContainer visibleImgContainer">
+                <img src="./img/brokenPipes.png" alt="A picture of broken pipes under a sink">
+                <button class="arrowButton leftArrow" onclick="slideInfoSections()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 17 17">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="hiddenGeneralInfoSection d-flex">
+          <div class="generalInfoContainer hiddenGeneralInfoContainer d-flex">
+            <div class="row smallerScreensHiddenInfo">
+              <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center hiddenInfoText">
+               <h2><span>ALL</span> DONE:)</h2>
+              </div>
+              <div class="col-12 col-xl-6 infoImgContainer hiddenImgContainer">
+                <img src="./img/fixedPipes.png" alt="A picture of fixed pipes under a sink">
+                <button class="arrowButton rightArrow" onclick="slideInfoSections()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 17 17">
+                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sliderDotsIndicator d-xl-none d-flex justify-content-center align-items-center gap-4">
+        <button class="d-flex" id="leftSliderDot" onclick = "slideInfoSections()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 17 17">
+            <circle cx="8" cy="8" r="8"/>
+          </svg>
+        </button>
+        <button class="d-flex inactiveSliderDot" id="rightSliderDot" onclick = "slideInfoSections()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 17 17">
+            <circle cx="8" cy="8" r="8"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="categoriesSection" id="categoriesSectionId">
+      <div class="row m-0">
+        <div class="col-12 categoriesInfo">
+          <h2>Categories</h2>
+          <p>New categories are developed constantly by you! </p>
+        </div>
+      </div>
+
+      <div class="row m-0 categoriesList">
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/electricityIcon.png" alt="An icon of a faucet" class="me-5 me-md-3">
+          <a href="./category.html?category=electricity">Electricity</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/plumbingIcon.png" alt="An icon of light switch" class="me-5 me-md-3">
+          <a href="./category.html?category=plumbing">Plumbing</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/mechanicsIcon.png" alt="An icon of a car wrench" class="me-5 me-md-3">
+          <a href="./category.html?category=mechanics">Mechanics</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/cleaningIcon.png" alt="An icon of a cleaning sprayer" class="me-5 me-md-3">
+          <a href="./category.html?category=cleaning">Cleaning</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/gardeningIcon.png" alt="An icon of a gardening shovel" class="me-5 me-md-3">
+          <a href="./category.html?category=gardening">Gardening</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/carpentryIcon.png" alt="An icon of a saw" class="me-5 me-md-3">
+          <a href="./category.html?category=carpentry">Carpentry</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/cookingIcon.png" alt="An icon of a mixing bowl and a spoon" class="me-5 me-md-3">
+          <a href="./category.html?category=cooking">Cooking</a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-md-center categoryItem">
+          <img src="./img/parentingIcon.png" alt="An icon of a baby bottle" class="me-5 me-md-3">
+          <a href="./category.html?category=parenting">Parenting</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <a class="secondaryButton secondaryButtonLink categoriesButton" href="wip.html">View all</a>
+      </div>
+    </section>
+    
+    <section class="reviewsSection" id="reviewsSectionId">
+      <div class="row alignSmallerScreens">
+        <div class="col-3 d-none d-xl-flex sideCardDesktop">
+          <h3>What people are saying</h3>
+          <div class="sideCardDesktopButtons">
+            <button onclick="previousReview()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 17 17">
+                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+              </svg>
+            </button>
+            <button onclick="nextReview()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 17 17">
+                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col-9 d-flex align-items-center">
+          <div class="carouselViewport">
+            <div class="carouselTrack">
+              <div class="whatPeopleAreSaying d-flex d-xl-none carouselCard">
+                <h3>What people are saying</h3>
+              </div>
+      
+              <div class="carouselCard">
+                <p>This platform makes learning new skills simple and enjoyable. The tutorials are clear, easy to follow, and helped me gain confidence tackling projects independently.</p>
+                <span>John Doe</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                </svg>
+              </div>
+      
+              <div class="carouselCard">
+                <p>I love how organized and beginner-friendly everything is. The explanations are straightforward, the content is useful, and I always leave with practical knowledge.</p>
+                <span>Ellie Smith</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                </svg>
+              </div>
+      
+              <div class="carouselCard">
+                <p>Great resource for anyone wanting to learn something new. The guides are detailed without being overwhelming, making even unfamiliar topics feel approachable.</p>
+                <span>Jake Jones</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                </svg>
+              </div>
+      
+              <div class="carouselCard">
+                <p>I've used several learning websites, but this one stands out. The content is well structured, easy to understand, and genuinely helps build skills.</p>
+                <span>Emma White</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                </svg>
+              </div>
+      
+              <div class="carouselCard">
+                <p>The variety of topics available is impressive. Whether I'm looking for quick tips or deeper explanations, I can always find helpful information here.</p>
+                <span>Michael Brown</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                </svg>
+              </div>
+      
+              <div class="carouselCard">
+                <p>This website has become one of my favorite learning resources. The tutorials are engaging, informative, and provide practical advice that I can apply immediately.</p>
+                <span>Olivia Davis</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+      <div class="mobileCarouselButtons d-flex d-xl-none">
+        <button onclick="previousReview()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 17 17">
+            <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+          </svg>
+        </button>
+        <button onclick="nextReview()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 17 17">
+            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="newsletterSection">
+      <div class="row m-0"> 
+        <div class="col-12 p-0">
+          <div class="newsLetterContainer">
+            <h4>Subscribe to our newsletter</h4>
+            <form>
+              <input type="email" placeholder="Enter your email">
+              <a href="wip.html">Subscribe</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row m-0 footerContainer">
+      <div class="col-4 m-0 p-0 footerItem">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html#aboutSectionId">About us</a></li>
+          <li><a href="about.html#missionSectionId">Our mission</a></li>
+          <li><a href="about.html#contactSectionId">Contact us</a></li>
+          <li><a href="about.html#suggestionsSectionId">Suggestions</a></li>
+        </ul>
+      </div>
+      <div class="col-4 m-0 p-0 footerItem">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="help.html#faqSectionId">FAQ</a></li>
+          <li><a href="help.html#supportSectionId">Support</a></li>
+          <li><a href="help.html#privacyPolicySectionId">Privacy policy</a></li>
+          <li><a href="help.html#termsOfServiceSectionId">Terms of service</a></li>
+        </ul>
+      </div>
+      <div class="col-4 m-0 p-0 footerItem">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://x.com/">Twitter</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <span>Adulting101</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/homePage.js"></script>
+</body>
+</html>

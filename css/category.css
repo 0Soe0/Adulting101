@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.categoryInfoSection {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.titleAndIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.titleAndIconContainer img {
+  height: 8rem;
+}
+
+.titleAndIconContainer h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #b31010;
+}
+
+.categoryInfoSection p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2b0808;
+  width: 50%;
+  text-align: center;
+}
+
+.categoryQuestionsSection, .categoryTutorialsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryQuestionsSectionInnerContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.categoryQuestionsContainer, .categoryTutorialsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.categoryQuestionsSectionInnerContainer h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b31010;
+  padding-bottom: 4rem;
+}
+
+.categoryQuestionsList, .categoryTutorialsList {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.categoryQuestionItem, .categoryTutorialItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.categoryQuestionItem h3 a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.categoryQuestionItem p {
+  font-size: 1.2rem;
+  color: #2b0808;
+}
+
+.categoryQuestionsContainer .seeMoreQuestions, .categoryTutorialsContainer .seeMoreTutorials {
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #b31010;
+  width: 10%;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.categoryTutorialItem img {
+  width: 70vw;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.categoryTutorialsSection {
+  margin-bottom: 5rem;
+}
+
+.categoryTutorialsSectionInnerContainer {
+  margin-top: 5rem;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.categoryTutorialsSectionInnerContainer h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b31010;
+  padding-bottom: 4rem;
+}
+
+.categoryTutorialItem {
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.categoryTutorialItem h3 a {
+  text-decoration: none;
+  color: #b31010;
+  font-weight: 400;
+}
+
+.categoryTutorialItem p {
+  font-size: 1.2rem;
+  color: #000;
+  width: 70vw;
+}
+
+.categoryTutorialItem h3 a:hover, .categoryQuestionItem h3 a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1200px) {
+  .categoryQuestionsContainer .seeMoreQuestions, .categoryTutorialsContainer .seeMoreTutorials {
+    width: 25%;
+  }
+}
+
+@media (max-width: 720px) {
+  .categoryQuestionsContainer .seeMoreQuestions, .categoryTutorialsContainer .seeMoreTutorials {
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .categoryTutorialItem img {
+    width: 18rem;
+  }
+
+  .categoryQuestionsContainer .seeMoreQuestions {
+    width: 70%;
+  }
+
+  .categoryTutorialsContainer .seeMoreTutorials {
+    width: 50%;
+  }
+
+  .titleAndIconContainer h1 {
+    font-size: 3rem;
+  }
+
+  .titleAndIconContainer {
+    gap: 0rem;
+  }
+
+  .categoryQuestionsSectionInnerContainer h2, .categoryTutorialsSectionInnerContainer h2 {
+    font-size: 2.5rem;
+  }
+
+  .categoryTutorialsSectionInnerContainer, .categoryQuestionsSectionInnerContainer {
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .categoryTutorialItem img {
+    width: 16rem;
+  }
+
+  .titleAndIconContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .categoryQuestionsSectionInnerContainer h2, .categoryTutorialsSectionInnerContainer h2 {
+    font-size: 2.2rem;
+  }
+}

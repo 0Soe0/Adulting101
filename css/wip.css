@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wipSection {
+  background-image: url("../img/wipBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wipSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+}
+
+.wipSectionContainer h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b31010;
+}
+
+.wipSectionContainer p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2b0808;
+}
+
+/*.wipSectionContainer button {
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #b31010;
+  width: 10%;
+}*/
+
+.wipSectionContainer a {
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #b31010;
+  text-align: center;
+  width: 10%;
+}
+
+@media (max-width: 1200px) {
+  .wipSection {
+    background-image: url("../img/wipBackgroundTablet.png");
+    background-position: top;
+  }
+
+  .wipSectionContainer h1 {
+    font-size: 2rem;
+  }
+
+  .wipSectionContainer p {
+    font-size: 1rem;
+  }
+
+  .wipSectionContainer a {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .wipSection {
+    background-image: url("../img/wipBackgroundMobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .wipSectionContainer {
+    padding-top: 3rem;
+  }
+
+  .wipSectionContainer p {
+    text-align: center;
+    margin: 0 2rem;
+  }
+
+  .wipSectionContainer a {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .wipSectionContainer p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+}

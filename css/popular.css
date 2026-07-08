@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.popularInfoSection {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.popularInfoSection h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #b31010;
+  padding-bottom: 1rem;
+}
+
+.popularInfoSection p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.popularQuestionsSection {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.popularQuestionsSection h2, .popularTutorialsSection h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #b31010;
+  padding-bottom: 2rem;
+}
+
+.popularQuestionsList {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.popularQuestionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 4rem;
+  width: 30vw;
+  border: 1px solid #000;
+}
+
+.popularQuestionItem h3 a, .popularTutorialItem h3 a {
+  text-decoration: none;
+  color: #b31010;
+}
+
+.popularQuestionItem h3 a:hover, .popularTutorialItem h3 a:hover {
+  text-decoration: underline;
+}
+
+.questionItemTags, .tutorialItemTags {
+  display: flex;
+  gap: 1rem;
+}
+
+.questionItemTags span, .tutorialItemTags span {
+  border: 1px solid #b31010;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  color:#b31010;
+}
+
+.popularTutorialsSection {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.popularTutorialsList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.popularTutorialItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.popularTutorialItem img {
+  width: 70vw;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.popularTutorialItem p {
+  font-size: 1.2rem;
+  width: 70vw;
+}
+
+@media (max-width: 1200px) {
+
+  .popularInfoSection {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  .popularQuestionsSection {
+    align-items: center;
+  }
+
+  .popularQuestionsList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .popularQuestionItem {
+    width: 80vw;
+  }
+
+  .popularTutorialItem p {
+    width: 80vw;
+  }
+  .popularTutorialItem img {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .popularInfoSection h1 {
+    font-size: 2.5rem;
+  }
+
+  .popularInfoSection p {
+    font-size: 1.2rem;
+  }
+
+  .popularQuestionsSection h2, .popularTutorialsSection h2 {
+    font-size: 2.2rem;
+  }
+
+  .tutorialItemTags {
+    width: 70vw;
+  }
+
+  .questionItemTags {
+    flex-direction: column-reverse;
+    width: 30vw;
+  }
+
+  .popularTutorialsList {
+    padding: 0rem 1rem;
+  }
+
+
+}

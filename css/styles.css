@@ -1,0 +1,674 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+.notScrollable {
+  overflow: hidden;
+}
+
+/* Hero Section */
+.heroSection {
+  background-image: url("../img/newApartment.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroSection h1 {
+  color: #000;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSection p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.heroButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.heroButtons a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.primaryButton {
+  background-color: #fcf9f9;
+}
+
+.primaryButtonLink {
+  color: #000;
+}
+
+.secondaryButton {
+  background-color: #b31010;
+}
+
+.secondaryButtonLink {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+
+  .heroSection h1 {
+    font-size: 3rem;
+  }
+  .heroSection p {
+    font-size: 0.9rem;
+  }
+  
+}
+
+/* Numbers Section */
+.numbersSection {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
+.numbersSection .numbersItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.numbersSection div h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #b31010;
+}
+
+.numbersSection div p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Categories Section */
+.categoriesSection {
+  margin: 0 5rem;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
+.categoriesSection .categoriesInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.categoriesSection h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.categoriesSection p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2b0808;
+}
+
+.categoriesSection div img {
+  height: 6rem;
+}
+
+.categoriesSection div div a {
+  text-decoration: none;
+  color: #b31010;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.categoryItem {
+  margin-bottom: 5rem;
+}
+
+.categoriesSection .categoriesButton {
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .categoriesSection {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .categoriesList {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .categoriesInfo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .categoriesInfo h2 {
+    font-size: 3rem;
+  }
+
+  .categoriesInfo p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* Info Section */
+.infoContainer {
+  overflow: hidden;
+}
+
+.info {
+  width: 200vw;
+  display: flex;
+  transition: all 0.8s ease;
+}
+
+.generalInfoSection {
+  background-color: #b31010;
+  width: 100vw;
+}
+
+.hiddenGeneralInfoSection {
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+}
+
+.paragraphInfo {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 4rem;
+}
+
+.generalInfoSection h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0rem;
+  padding-top: 2rem;
+}
+
+.generalInfoSection h2 span {
+  color: #fff;
+}
+
+.generalInfoSection h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #140808;
+  padding-bottom: 2.5rem;
+  margin-bottom: 0;
+}
+
+.generalInfoSpan {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.generalInfoSection p {
+  font-size: 1.2rem;
+  color: #000;
+  padding-top: 2rem;
+}
+
+.infoImgContainer {
+  position: relative;
+}
+
+.infoImgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrowButton {
+  z-index: 8;
+  position: absolute;
+  border: none;
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: transparent;
+}
+
+.leftArrow {
+  right: 5%;
+  top: 50%;
+}
+
+.rightArrow {
+  left: 5%;
+  top: 50%;
+}
+
+.hiddenGeneralInfoSection h2 span {
+  color: #b31010;
+}
+
+.hiddenGeneralInfoSection h2 {
+  font-size: 10rem;
+}
+
+.hiddenInfoText h2 {
+  text-align: center;
+}
+
+.sliderDotsIndicator {
+  position: relative;
+  z-index: 9;
+  bottom: 5rem;
+}
+
+.sliderDotsIndicator button {
+  border: none;
+  border-radius: 50%;
+}
+
+.sliderDotsIndicator button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.inactiveSliderDot {
+  color: transparent;
+  border: 1px solid #000;
+}
+
+@media (max-width: 1200px) {
+
+  .infoSection {
+    height: 100vh;
+  }
+
+  .arrowButton {
+    display:none;
+  }
+
+  .generalInfoContainer {
+    width: 75vw;
+  }
+
+  .paragraphInfo {
+    background-color: #b31010;
+    border-radius: 1rem;
+    padding-bottom: 7rem;
+    margin-bottom: 0;
+    height: 49rem;
+  }
+
+  .generalInfoSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .visibleGeneralInfoSection {
+    background-color: #fff;
+  }
+
+  .smallerScreensInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .infoImgContainer {
+    width: 50vw;
+    z-index: 9;
+    position: relative;
+  }
+
+  .infoImgContainer img {
+    border-radius: 1rem;
+  }
+
+  .visibleImgContainer {
+    top: -6rem;
+  }
+
+  .hiddenImgContainer {
+    bottom: 6rem;
+  }
+
+  .hiddenGeneralInfoSection {
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hiddenInfoText {
+    background-color: #000;
+    border-radius: 1rem;
+    height: 49rem;
+  }
+
+  .smallerScreensHiddenInfo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .paragraphInfo {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .info {
+    width: 200vw;
+  }
+
+  .generalInfoSection, .hiddenGeneralInfoSection {
+    width: 100vw;
+  }
+
+  .generalInfoContainer {
+    width: 85vw;
+  }
+
+  .hiddenInfoText h2 {
+    font-size: 6rem;
+  }
+
+  .infoImgContainer {
+    width: 70vw;
+    position: static;
+    z-index: auto;
+  }
+
+  .smallerScreensHiddenInfo {
+    background-color: #000;
+    border-radius: 1rem;
+    height: 64rem;
+  }
+  .smallerScreensInfo {
+    background-color: #b31010;
+    border-radius: 1rem;
+    height: 64rem;
+  }
+
+  .sliderDotsIndicator {
+    position: static;
+    z-index: auto;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 402px) {
+
+  .paragraphInfo {
+    height: 55rem;
+  }
+
+  .paragraphInfo p {
+    font-size: 1.1rem;
+  }
+
+  .hiddenInfoText {
+    height: 55rem;
+  }
+
+  .smallerScreensHiddenInfo {
+    height: 66rem;
+    padding-bottom: 3rem;
+  }
+
+  .smallerScreensInfo {
+    height: 66rem;
+    padding-bottom: 3rem;
+  }
+
+  .infoImgContainer {
+    width: 80vw;
+  }
+
+}
+
+ /*Reviews Section*/
+
+ .reviewsSection {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-left: 5rem;
+ }
+
+ .carouselViewport {
+  overflow: hidden;
+ }
+
+ .carouselTrack {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.carouselCard {
+  flex: 0 0 17.5%;
+  opacity: .7;
+  height: 20rem;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0rem 2rem;
+  transition: opacity 0.4s ease;
+}
+
+.carouselCard span {
+  padding-bottom: 1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.carouselCard svg {
+  color: #b31010;
+}
+
+.activeCarouselCard {
+  flex: 0 0 30%;
+  height: 25rem;
+  opacity: 1;
+}
+
+.sideCardDesktop {
+  height: 30rem;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  color: #b31010;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sideCardDesktop h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sideCardDesktop button {
+  border: none;
+  background-color: transparent;
+}
+
+.sideCardDesktopButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1200px){
+
+  .carouselViewport {
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
+  }
+
+  .alignSmallerScreens {
+    align-items: center;
+    justify-content: center;
+  }
+  .reviewsSection {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .carouselCard {
+    flex: 0 0 75%;
+  }
+  .activeCarouselCard {
+    flex: 0 0 82%;
+  }
+  .whatPeopleAreSaying {
+    color: #b31010;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whatPeopleAreSaying h3 {
+    font-size: 4rem;
+  }
+
+  .mobileCarouselButtons button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .mobileCarouselButtons {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .carouselTrack {
+    gap: 1rem;
+  }
+
+  .carouselCard {
+    flex: 0 0 63%;
+  }
+  .activeCarouselCard {
+    flex: 0 0 70%;
+  }
+
+  .whatPeopleAreSaying h3{
+    font-size: 2rem;
+  }
+  .carouselCard p {
+    font-size: 0.7rem;
+  }
+  .carouselCard span {
+    font-size: 0.7rem;
+  }
+  .carouselCard svg {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .activeCarouselCard p {
+    font-size: 0.9rem;
+  }
+  .activeCarouselCard span {
+    font-size: 0.9rem;
+  }
+  .activeCarouselCard svg {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}
+
+/*Newsletter Section*/
+
+.newsLetterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  gap: 6rem;
+  padding: 5rem 0rem;
+  margin-bottom: 5rem;
+}
+
+.newsLetterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newsLetterContainer form input {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.newsLetterContainer form a {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #b31010;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .newsLetterContainer {
+    flex-direction: column;
+  }
+}

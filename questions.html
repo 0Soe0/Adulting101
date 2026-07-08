@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/questions.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <title>Adulting101</title>
+</head>
+<body>
+  <header id="navbar">
+    <nav>
+      <div>
+        <div class="col-12">
+          <ul class="d-none d-md-flex" id="menuList">
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="index.html#categoriesSectionId" id="categories">Categories</a></li>
+            <li><a href="questions.html" id="questions">Questions</a></li>
+            <li><a href="popular.html" id="popular">Popular</a></li>
+            <li><a href="signIn.html" id="signIn">Sign in</a></li>
+          </ul>
+          <div class="menuButtonContainer">
+            <button class="d-flex d-md-none menuButton" onclick="toggleMenu()" id="menuButtonId">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-justify" id="openMenu" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-square d-none" id="closeMenu" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="searchAndCategorySelectSection">
+      <div class="searchSectionInnerContainer">
+        <input type="search" id="searchInput" placeholder="Search for a question">
+          <a href="wip.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </a>
+      </div>
+      <div class="categorySelectContainer">
+        <select id="categorySelect">
+          <option value="all">All categories</option>
+          <option value="mechanics">Mechanics</option>
+          <option value="gardening">Gardening</option>
+          <option value="plumbing">Plumbing</option>
+          <option value="carpentry">Carpentry</option>
+          <option value="electricity">Electricity</option>
+          <option value="cleaning">Cleaning</option>
+          <option value="parenting">Parenting</option>
+          <option value="cooking">Cooking</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="askQuestionSection">
+      <h2>Gain knowledge</h2>
+      <div class="askQuestionForm">
+        <a href="wip.html">Ask a question</a>
+      </div>
+    </section>
+
+    <section class="questionsSection">
+      <h1>Questions</h1>
+      <div class="questionsList">
+        <div class="questionItem">
+          <h3><a href="wip.html">How can I tell if a circuit breaker needs to be replaced?</a></h3>
+          <p>One of the breakers in my electrical panel keeps tripping, and I'm not sure whether it's doing its job or if it's faulty and needs to be replaced.</p>
+          <div class="questionItemTags">
+            <span>Mechanics</span>
+            <span>2650 responses</span>
+          </div>
+        </div>
+        <div class="questionItem">
+          <h3><a href="wip.html">What does it mean if my car pulls to one side while driving?</a></h3>
+          <p>When I drive on a straight road, my car tends to drift to the left or right. I'm not sure if the issue is related to the tires, alignment, or something else.</p>
+          <div class="questionItemTags">
+            <span>Mechanics</span>
+            <span>800 responses</span>
+          </div>
+        </div>
+        <div class="questionItem">
+          <h3><a href="wip.html">Why are weeds growing so quickly in my garden?</a></h3>
+          <p>I recently cleaned up my garden, but weeds seem to come back almost immediately. I'd like to know what's causing this and how to keep them under control.</p>
+          <div class="questionItemTags">
+            <span>Gardening</span>
+            <span>1205 responses</span>
+          </div>
+        </div>
+        <div class="questionItem">
+          <h3><a href="wip.html">Why does my shower water pressure seem so low?</a></h3>
+          <p>The water coming from my shower has become much weaker than it used to be. I'm not sure whether the issue is with the shower head, the plumbing, or the home's water supply.</p>
+          <div class="questionItemTags">
+            <span>Plumbing</span>
+            <span>320 responses</span>
+          </div>
+        </div>
+        <div class="questionItem">
+          <h3><a href="wip.html">Why are there cracks appearing in my wooden furniture?</a></h3>
+          <p>I recently noticed small cracks forming on a wooden table and bookshelf. I'm not sure if they're caused by humidity, age, or improper maintenance, and I'd like to know how to prevent them from getting worse.</p>
+          <div class="questionItemTags">
+            <span>Carpentry</span>
+            <span>40 responses</span>
+          </div>
+        </div>
+      </div>
+      <div class="questionsSectionButtons">
+        <a href="wip.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 17 17">
+            <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+          </svg>
+        </a>
+        <a href="wip.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 17 17">
+            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="row m-0 footerContainer">
+      <div class="col-4 m-0 p-0 footerItem">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html#aboutSectionId">About us</a></li>
+          <li><a href="about.html#missionSectionId">Our mission</a></li>
+          <li><a href="about.html#contactSectionId">Contact us</a></li>
+          <li><a href="about.html#suggestionsSectionId">Suggestions</a></li>
+        </ul>
+      </div>
+      <div class="col-4 m-0 p-0 footerItem">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="help.html#faqSectionId">FAQ</a></li>
+          <li><a href="help.html#supportSectionId">Support</a></li>
+          <li><a href="help.html#privacyPolicySectionId">Privacy policy</a></li>
+          <li><a href="help.html#termsOfServiceSectionId">Terms of service</a></li>
+        </ul>
+      </div>
+      <div class="col-4 m-0 p-0 footerItem">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://x.com/">Twitter</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <span>Adulting101</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/questions.js"></script>
+</body>
+</html>
